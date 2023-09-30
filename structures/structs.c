@@ -7,17 +7,17 @@ typedef struct
     char city[20];
 } Address;
 
-struct cust_details
+typedef struct
 {
     char name[20];
     char sex[2];
     int age;
     Address address; // Changed to store an instance of the Address struct
-};
+} cust_details;
 
 int main()
 {
-    struct cust_details customer;
+    cust_details customer;
 
     printf("Please enter your name: \n");
     scanf("%19s", customer.name);
